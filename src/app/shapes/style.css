@@ -1,0 +1,12 @@
+div.mapgeo{   
+    
+    margin-left: 100px;
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 700px;
+    height: 700px;
+}
+
+
+

@@ -1,0 +1,189 @@
+body {
+    background: #ecf0f5;
+}
+
+.sidebar--sema {
+    padding-right: 1.2rem;
+}
+
+.content-header {
+    min-height: 50px;
+}
+
+.main-footer {
+    position: fixed;
+    bottom  : 0px;
+    width   : 100%;
+}
+
+button {
+    margin-left: 5px;
+}
+
+.table-actions {
+    width: 150px;
+}
+
+.content {
+    padding-bottom: 50px;
+}
+
+.box-body {
+    background-color: #fff;
+}
+
+.brand-image--custom {
+    /* margin-left: 0 !important; */
+}
+
+.custom-list-group>li {
+    display: inline-table;
+}
+
+.custom-list-group>li>h5 {
+    font-weight: bold;
+}
+
+.custom-list-group>li>a {
+    text-decoration: none;
+    color          : inherit;
+    cursor         : pointer;
+}
+
+.custom-list-group>li:hover {
+    background-color: #0000000d;
+}
+
+.center-block {
+    display     : block;
+    margin-right: auto !important;
+    margin-left : auto !important;
+}
+
+.material-item {
+    border: none;
+    border-radius: 3px;
+    box-shadow:
+        0px 1px 5px 0px rgba(0, 0, 0, 0.2),
+        0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+        0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+}
+/* Aumentando fonte das legendas dos Charts*/
+.MuiTypography-subheading-38 {
+    font-size: 1.3rem !important;
+}
+
+.nav-link--bg {
+    display: inline;
+}
+
+.nav-link--sm {
+    display: none;
+}
+
+.btn--get_taxpayer {
+    margin-top: 21% !important
+}
+
+hr.dashed {
+    border-top: 2px dashed #b1b2b3;
+}
+
+@media (max-width: 767px) {
+    .nav-link--bg {
+        display: none;
+    }
+    
+    .nav-link--sm {
+        display: inline;
+    }
+
+    .btn--get_taxpayer {
+        margin-top: 0% !important
+    }
+}
+
+.box > .box-header {
+    display: block;
+    padding: 5px 10px;
+}
+
+.box > .box-body {
+    float: left;
+    width: 100%;
+}
+
+.collapsed-box > .box-body {
+    display: none;
+}
+
+select {
+    background-image:
+        linear-gradient(45deg, transparent 50%, #60666C 60%),
+        linear-gradient(135deg, #60666C 40%, transparent 50%) !important;
+    background-position:
+        calc(100% - 20px) 50%, /* Posição horizontal da primeira seta */
+        calc(100% - 15px) 50%; /* Posição horizontal da segunda seta */
+    background-size:
+        6px 6px,
+        6px 6px;
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.page-link{
+    padding: 0.25rem 1rem !important;
+}
+
+.color-icon-white {
+    color: white !important;
+}
+
+.color-icon-white:hover {
+    color: white !important;
+    opacity: 0.7;
+}
+
+.circle {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    border-radius: 72px;
+    padding: 8px, 9px, 8px, 9px;    ;
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    line-height: 24px;
+    font-weight: bold;
+    font-size: 16px;
+    vertical-align: middle; /* alinha verticalmente com o texto ao lado */
+    margin-top: -2px;
+}
+
+strong {
+    color: black !important;
+}
+
+.blue-text {
+    color: #007BFF !important;
+}
+
+.processo-text {
+    padding-left: 10px;
+    font-weight: 700;
+    /* font-size: 16px; */
+    line-height: 24px;
+}
+
+[class*='sidebar-dark-'] .sidebar a {
+    color: white !important;
+}
+
+[class*='sidebar-dark-'] {
+    background-color: #212529 !important;
+}
+
+.custom-bg-color {
+    background-color: #3f474e !important;
+}

@@ -1,17 +1,29 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import { applyMiddleware, createStore } from "redux";
+import { Provider } from "react-redux";
+import promisse from "redux-promise";
+import multi from "redux-multi";
+import thunk from "redux-thunk";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+import * as serviceWorker from "./serviceWorker";
+import AuthOrApp from "./main/authOrApp";
+import reducers from "./main/reducers";
+
+const devTools =
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__({ trace: true, traceLimit: 25 });
+const store = applyMiddleware(multi, thunk, promisse)(createStore)(
+  reducers,
+  devTools
+);
+ReactDOM.render(
+  <Provider store={store}>
+    <AuthOrApp />
+  </Provider>,
+  document.getElementById("app")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();
